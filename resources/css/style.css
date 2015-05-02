@@ -1,0 +1,181 @@
+/*
+	Theme Name: JGV3 - 2.2014
+	Author: Joe Gilbert
+	Description: In with the new hotness.
+	Version: 1.0
+----------------------------------------------- */
+
+
+/* [ Reset default browser CSS. Based on work by Eric Meyer ]
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	margin:0;
+	outline:0;
+	padding:0;
+	vertical-align:baseline;}
+
+:focus{outline:0;}
+
+ol, ul{list-style:none;}
+
+table{border-collapse:separate; border-spacing:0;}
+
+caption, th, td{font-weight:normal; text-align:left;}
+
+a img{border:0;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{display:block;}
+
+
+/* [ Structure ]
+----------------------------------------------- */
+body, input, textarea {
+	color:#333;
+	font:100% "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	line-height:1.3;}
+
+.container{margin:0 auto; max-width:1200px; width:70%;}
+
+
+/* [ Section - Combined Styles ]
+----------------------------------------------- */
+.camp-overview, .camp-registration-forms{margin-bottom:8em;}
+.camp-coaches, .camp-specifics{padding:5% 0;}
+
+
+
+/* [ Section - Camp Coaches ]
+----------------------------------------------- */
+.camp-coaches{background:#323232; color:#FFF;}
+.camp-coaches .section-title{margin-bottom:1em; text-align:center;}
+.camp-coaches .coach{float:left; width:30%;}
+.camp-coaches .coach:first-child{padding-right:5%;}
+.camp-coaches .coach:last-child{padding-left:5%;}
+.camp-coaches .coach .name{font-weight:600;}
+.camp-coaches .coach .about, .camp-coaches .featured-instruction{font-size:1.4em;}
+
+
+/* [ Section - Camp Registration ]
+----------------------------------------------- */
+.camp-registration-forms{border:1px solid #D8D8D8; margin-left:auto; margin-right:auto; text-align:center; width:50%;}
+.camp-registration-forms .flat-btn:first-child{margin-right:1.5em;}
+.camp-registration-forms .registration-cta{font-size:1.5em;}
+.camp-registration-forms .section-title{background:#FFF; margin:-0.5em auto 1em; width:60%;}
+
+
+/* [ Section - Camp Specifics ]
+----------------------------------------------- */
+.camp-specifics{background:#F2F2F2; margin-bottom:5em;}
+.camp-specifics .details{float:right; width:75%;}
+.camp-specifics .email-address{display:block;}
+.camp-specifics .specific ul{list-style:none;}
+.camp-specifics .title{float:left; font-weight:600; width:20%;}
+
+
+/* [ Footer ]
+----------------------------------------------- */
+footer .copyright{font-size:0.8em; font-weight:300; text-align:center;}
+
+
+/* [ Header ]
+----------------------------------------------- */
+header{background:#3770EF; color:#FFF; margin-bottom:4em;}
+header .camp-year{float:left;}
+header .container{display:block;}
+header .date-range{float:right;}
+header .title{margin:0 auto; padding:4% 0 2%;}
+header .subtitle{background:#323232; padding:0.3em;}
+
+
+/* [ Universal - Fonts ]
+----------------------------------------------- */
+blockquote, p, ul, ol{font-size:1.8em; margin-bottom:2.5em;}
+
+blockquote{background:#F2F2F2; border-left:0.5em solid #3770EF; padding:1em;}
+blockquote p{font-size:1em; margin-bottom:1em;}
+
+em{font-style:italic;}
+
+h1{font-size:4em; font-size:7vw; font-weight:600; line-height:1; text-transform:uppercase;}
+h2{font-size:3em; font-size:3vw;}
+h3{font-size:1.8em;}
+
+strong{font-weight:bold;}
+
+
+/* [ Universal - Link ]
+----------------------------------------------- */
+a{color:#333;}
+a:focus, a:active, a:hover{color:#000;}
+
+.flat-btn{
+	display:inline-block;
+	padding:1em;
+	position:relative;
+	text-decoration:none;}
+
+.flat-btn.blue{background:#3770EF; color:#FFF; box-shadow: 0 0.3em #1538EF;}
+.flat-btn.blue:hover{top:0.1em; box-shadow: 0 0.2em #1538EF;}
+.flat-btn.blue:active{top:0.3em; box-shadow: 0 0 #1538EF;}
+
+
+/* [ Universal - List ]
+----------------------------------------------- */
+ul{list-style:square;}
+
+ol{list-style-type:decimal;}
+ol ol {list-style:upper-alpha;}
+ol ol ol {list-style:lower-roman;}
+ol ol ol ol {list-style:lower-alpha;}
+
+ul ul, ol ol, ul ol, ol ul{margin-bottom:0;}
+
+dl{margin:0 1.625em;}
+dt{font-weight:bold;}
+dd{margin-bottom:1.625em;}
+
+li{margin-bottom:0.5em;}
+
+
+/* [ Universal - Utilities ]
+----------------------------------------------- */
+/* [ Clear Divs ] */
+.clear-fix:before,
+.clear-fix:after{content:""; display:table;}
+.clear-fix:after{clear:both;}
+.clear-fix{zoom:1;} /* For IE 6/7 (trigger hasLayout) */
+
+.tight-bottom{margin-bottom:0;}
+
+
+/* [ Media Queries ]
+----------------------------------------------- */
+@media screen and (max-width:1200px){
+	body{font-size:90%;}
+}
+
+@media screen and (max-width:960px), only screen and (min-device-width:320px) and (max-device-width:480px){
+	body{font-size:60%;}
+	.container, .camp-registration-forms{width:90%;}
+	.camp-registration-forms .flat-btn:first-child{margin-right:auto;}
+	.flat-btn{display:block; margin:0 auto 1.5em auto; width:90%;}
+}
+
+@media screen and (max-width:600px), only screen and (min-device-width:320px) and (max-device-width:480px){
+	.camp-coaches .coach,  .camp-coaches .coach:first-child, .camp-coaches .coach:last-child,
+	.camp-specifics .details, .camp-specifics .title{float:none; padding:0; width:100%;}
+}

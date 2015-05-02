@@ -1,0 +1,1 @@
+<script src="resources/js/respond.min.js"></script>
